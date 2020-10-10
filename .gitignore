@@ -1,0 +1,30 @@
+*env
+
+
+# virtualenv
+.venv
+venv/
+ENV/
+.vscode
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+.DS_Store
+*.sqlite3
+media/
+*.pyc
+*.db
+*.pid
+
+# Those using pipenv
+Pipfile
+Pipfile.lock
