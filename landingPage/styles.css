@@ -2,6 +2,16 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    width: 100%;
+}
+
+header,
+main {
+    width: 100%;
+    overflow: hidden;
+}
+
 .nav-link {
     font-weight: 600;
     font-size: large;
@@ -82,7 +92,7 @@ header {
     position: absolute;
     left: 50%;
     bottom: 45%;
-    z-index: 3;
+    z-index: 20;
     cursor: pointer;
 }
 
@@ -224,9 +234,9 @@ textarea {
 }
 
 footer {
-    padding-top: 20%;
+    padding-top: 10%;
     position: absolute;
-    top: 510%;
+    top: 520%;
     width: 100%;
     padding-bottom: 5%;
 }
@@ -258,9 +268,11 @@ footer .social i {
     .title {
         color: #007bff !important;
         padding-top: 5rem;
+        font-size: 2rem;
     }
     .ab {
         text-align: center !important;
+        display: none;
     }
     .ba {
         font-size: 1rem;
@@ -268,6 +280,7 @@ footer .social i {
     }
     .play {
         left: 40%;
+        bottom: 45%;
     }
     .circle {
         top: 5%;
