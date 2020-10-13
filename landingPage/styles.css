@@ -226,14 +226,41 @@ textarea {
 footer {
     padding-top: 20%;
     position: absolute;
-    top: 530%;
+    top: 510%;
     width: 100%;
+    padding-bottom: 5%;
+}
+
+footer .social a {
+    width: 5em;
+}
+
+footer .quick-links a {
+    margin: 1rem 0rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+footer .line {
+    height: 5px;
+}
+
+footer .social i {
+    margin: 1rem 0rem;
+    background: #007bff;
+    color: white;
+    border: #007bff;
+    text-align: center;
+    font-size: 1.7rem;
 }
 
 @media(max-width:550px) {
     .title {
         color: #007bff !important;
         padding-top: 5rem;
+    }
+    .ab {
+        text-align: center !important;
     }
     .ba {
         font-size: 1rem;
