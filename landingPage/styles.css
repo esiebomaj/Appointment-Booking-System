@@ -50,7 +50,7 @@ header {
     display: flex;
     flex-wrap: wrap-reverse;
     position: relative;
-    z-index: 2;
+    z-index: 8;
 }
 
 .wave {
@@ -193,24 +193,41 @@ main {
 }
 
 .here {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .info {
-    border: 1px solid #f4f4f4;
+    border: 2px solid #f4f4f4;
     height: 40%;
+    margin-top: 10%;
+    padding: 8% 2%;
+    position: relative;
+    z-index: 3;
+    background: #fff;
 }
 
 .input-field {
-    border: 2px solid #007bff;
+    border: 1px solid #007bff;
     color: #007bff;
     outline: none;
     margin: 3px 0;
 }
 
 textarea {
-    border: 2px solid #007bff;
+    border: 1px solid #007bff;
     color: #007bff;
+    outline: #007bff;
+}
+
+.get-in-touch {
+    position: relative;
+}
+
+footer {
+    padding-top: 20%;
+    position: absolute;
+    top: 530%;
+    width: 100%;
 }
 
 @media(max-width:550px) {
@@ -239,5 +256,8 @@ textarea {
     }
     .ds {
         top: 310%;
+    }
+    footer {
+        position: relative;
     }
 }
