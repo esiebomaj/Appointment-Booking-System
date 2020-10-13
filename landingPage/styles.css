@@ -192,6 +192,10 @@ main {
     font-size: 1.1rem;
 }
 
+.here {
+    font-size: 1.5rem;
+}
+
 .info {
     border: 1px solid #f4f4f4;
     height: 40%;
