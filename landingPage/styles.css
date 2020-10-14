@@ -18,7 +18,8 @@ main {
 }
 
 #sign-inbtn,
-#sign-upbtn {
+#sign-upbtn,
+.fa-search {
     border-radius: 1.3rem;
     position: relative;
     z-index: 10;
