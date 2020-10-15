@@ -1,0 +1,16 @@
+{%extends 'main/base.html'%}
+
+{%block title%}
+join
+{%endblock%}
+
+{%block content%}
+<h1>
+    Create your account here
+</h1>
+<form method="POST">
+    {%csrf_token%}
+    {{form.as_p}}
+    <button type="submit">Submit</button>
+</form>
+{%endblock%}

@@ -1,6 +1,6 @@
 
 from pathlib import Path
-
+import os
 import environ
 env = environ.Env()
 # reading .env file
@@ -45,7 +45,7 @@ ROOT_URLCONF = 'DocAppointment.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'), ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -112,3 +112,8 @@ USE_TZ = True
 AUTH_USER_MODEL = 'users.CustomUser'
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = "/"

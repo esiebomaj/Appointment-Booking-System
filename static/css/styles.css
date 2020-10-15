@@ -1,0 +1,323 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+}
+
+header,
+main {
+    width: 100%;
+    overflow: hidden;
+}
+
+.nav-link {
+    font-weight: 600;
+    font-size: large;
+}
+
+#sign-inbtn,
+#sign-upbtn,
+.fa-search {
+    border-radius: 1.3rem;
+    position: relative;
+    z-index: 10;
+}
+
+header {
+    position: relative;
+}
+
+.navbar,
+.nav-link {
+    position: relative;
+}
+
+.nav-link,
+.navbar-brand {
+    z-index: 2;
+}
+
+.navbar-toggler-icon {
+    position: relative;
+    z-index: 10;
+}
+
+
+/*styles for the home area*/
+
+.intro-head {
+    font-size: 4.5em;
+}
+
+.ba {
+    border-radius: 1.2rem;
+    width: 42%;
+    font-size: 1.1rem;
+}
+
+#home {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    position: relative;
+    z-index: 8;
+}
+
+.wave {
+    position: absolute;
+    top: -5%;
+    left: -3%;
+}
+
+.circle {
+    position: absolute;
+    right: -20%;
+    top: -8%;
+    overflow: hidden;
+}
+
+.string {
+    position: absolute;
+    right: -15%;
+    top: 20%;
+    overflow: hidden;
+    z-index: 1.3;
+}
+
+.play img {
+    max-width: 100%;
+}
+
+.play {
+    position: absolute;
+    left: 50%;
+    bottom: 45%;
+    z-index: 20;
+    cursor: pointer;
+}
+
+
+/*-----------main------------------*/
+
+main {
+    margin-top: 20%;
+}
+
+#about h2 {
+    float: left;
+    clear: both;
+}
+
+.small {
+    width: 2%;
+    background: #007bff;
+    border-radius: 6px;
+    height: 8px;
+    position: absolute;
+    bottom: 69%;
+    left: 2.5%;
+}
+
+.large {
+    width: 16.5%;
+    background: #007bff;
+    border-radius: 6px;
+    height: 8px;
+    position: absolute;
+    bottom: 69%;
+    left: 5%;
+}
+
+.about {
+    margin: 3% auto 15% auto;
+}
+
+.about-title {
+    color: rgb(58, 58, 59);
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.service h2 {
+    padding-top: 5%;
+    font-weight: 500;
+}
+
+.line {
+    width: 8%;
+    background: #007bff;
+    height: 8px;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+.line1 {
+    width: 8%;
+    background: #007bff;
+    height: 8px;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+.service {
+    background: rgb(219, 220, 255);
+    margin: 10% auto;
+}
+
+#how-it-works {
+    margin: 10% auto 5% auto;
+}
+
+.ds {
+    position: absolute;
+    top: 240%;
+    z-index: 0.5;
+}
+
+.num {
+    font-weight: 700;
+    font-size: 5.4rem;
+}
+
+#how-it-works .col-md-4 {
+    position: relative;
+}
+
+.step {
+    position: absolute;
+    top: 10%;
+    color: rgb(81, 81, 83);
+}
+
+.newsletter .line {
+    height: 5px;
+}
+
+.newsletter {
+    margin-top: 10%;
+    padding-top: 5%;
+    background: url(./Assets/Assets/map.png);
+    background-attachment: local;
+    background-position: center;
+}
+
+.subscribe-btn {
+    border-radius: 1rem
+}
+
+.input {
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+.here {
+    font-size: 1.1rem;
+}
+
+.info {
+    border: 2px solid #f4f4f4;
+    height: 40%;
+    margin-top: 10%;
+    padding: 8% 2%;
+    position: relative;
+    z-index: 3;
+    background: #fff;
+}
+
+.input-field {
+    border: 3px solid #007bff;
+    height: 3rem;
+    border-radius: 3px;
+    line-height: 3;
+    padding-left: 10px;
+    color: #007bff;
+    outline: none;
+    margin: 3px 0;
+}
+
+textarea {
+    border: 3px solid #007bff;
+    padding-left: 10px;
+    color: #007bff;
+    outline: #007bff;
+}
+
+.get-in-touch {
+    position: relative;
+}
+
+footer {
+    padding-top: 10%;
+    position: absolute;
+    top: 570%;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+footer .social a {
+    width: 5em;
+    box-shadow: 3px 3px 3px #414040;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+footer .social a:hover {
+    background-color: rgba(168, 168, 170, 0.2);
+    color: #082fdd;
+}
+
+footer .quick-links a {
+    margin: 1rem 0rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+footer .line {
+    height: 5px;
+}
+
+footer .social i {
+    margin: 1rem 0rem;
+    border: #007bff;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+@media(max-width:550px) {
+    .title {
+        color: #007bff !important;
+        padding-top: 5rem;
+        font-size: 2rem;
+    }
+    .ab {
+        text-align: center !important;
+        display: none;
+    }
+    .ba {
+        font-size: 1rem;
+        width: 100%;
+    }
+    .play {
+        left: 40%;
+        bottom: 45%;
+    }
+    .circle {
+        top: 5%;
+        right: -33%;
+    }
+    .small,
+    .large {
+        display: none;
+    }
+    .about-title,
+    .ab {
+        text-align: center;
+    }
+    .ds {
+        top: 310%;
+    }
+    footer {
+        position: relative;
+    }
+}
