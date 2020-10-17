@@ -1,12 +1,11 @@
 from django.db import models
+from users.models import CustomUser
 
 # Create your models here.
 class HospitalSection(models.Model):
-    section_id = models.UUIDField(primary_key=True, editable=False)
     name = models.CharField(max_length = 100)
 
 class Doctor(models.Model):
-    doctor_id = models.UUIDField(primary_key=True, editable=False)
     name = models.CharField(max_length=100)
     email = models.EmailField()
     phone = models.CharField(max_length = 100)
@@ -17,9 +16,8 @@ class Doctor(models.Model):
 
 class Appointments(models.Model):
     #models appointment between a doctor and patient
-    appointment_id = models.UUIDField(primary_key=True, editable=False)
-    patient_id = models.CharField(max_length=100)
-    doctor_id = models.CharField(max_length=100)
+    patient_id = models.ForeignKey(CustomUser, related_name='patients', on_delete=models.CASCADE)
+    doctor_id = models.ForeignKey(Doctor, related_name='appointments', on_delete=models.CASCADE)
     date =models.DateTimeField()
     time_alloted = models.DateTimeField()
     number_alloted = models.CharField(max_length=100)
