@@ -115,7 +115,7 @@ main {
     border-radius: 6px;
     height: 8px;
     position: absolute;
-    bottom: 69%;
+    bottom: 70%;
     left: 2.5%;
 }
 
@@ -125,7 +125,7 @@ main {
     border-radius: 6px;
     height: 8px;
     position: absolute;
-    bottom: 69%;
+    bottom: 70%;
     left: 5%;
 }
 
@@ -249,7 +249,7 @@ textarea {
 }
 
 footer {
-    padding-top: 10%;
+    padding-top: 3%;
     position: absolute;
     top: 610%;
     width: 100%;
@@ -319,5 +319,50 @@ footer .social i {
     }
     footer {
         position: relative;
+    }
+}
+
+@media(max-width:1000px) {
+    footer {
+        position: relative;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    footer img {
+        width: 13rem;
+        margin: 0 auto;
+    }
+    .get-in-touch .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .get-in-touch .container .first {
+        width: 100% !important;
+        margin: auto !important;
+    }
+    .get-in-touch .container .info {
+        color: red
+    }
+    .foot {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .quick-links {
+        margin-left: 10%;
+    }
+    .small,
+    .large {
+        bottom: 75%;
+    }
+    .hiw {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 10%;
     }
 }
