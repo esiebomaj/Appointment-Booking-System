@@ -16,15 +16,15 @@ AppDoc is a health booking app that will be aid in scheduling an appointment wit
 ## Screenshots
 
 
-(./img/landingpage.png)
+![Landing Page](./img/landingpage.png)
 
 
 
-(./img/aboutus.png)
+![about us](./img/aboutus.png)
 
 
 
-(./img/services.png)
+![services](./img/services.png)
 
 ## Technologies
 * Html
