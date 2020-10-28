@@ -14,14 +14,19 @@ An Appointment Booking System for clinics and hospitals
 AppDoc is a health booking app that will be aid in scheduling an appointment with your doctor in any hospital in Nigeria. The purpose of this project is to reduce the number of crowd that books appointment with the doctor offline when it could be done in a more convenient way.
 
 ## Screenshots
-![Example screenshot1](./img/landingpage.png)
-![Example screenshot2](./img/aboutus.png)
-![Example screenshot3](./img/services.png)
+![Landing Page](./img/landingpage.png)
+
+
+
+![About us](./img/aboutus.png)
+
+
+
+![Services](./img/services.png)
 
 ## Technologies
 * Html
 * CSS
-* Bootstrap --Version 4.5
 * Javascript
 * Django --Version 3.1.2
 
