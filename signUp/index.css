@@ -1,0 +1,97 @@
+body{
+  /*background-color: red;*/
+  background-color: #49A3F1;
+  margin: 0;
+  padding: 0;
+}
+.sv{
+ max-height: 90vh;
+ position: absolute;
+ margin-right: 50px;
+ 
+}
+
+.tar{
+  background-color: white;
+  border-right: 1px solid violet;
+  width: 500px;
+  height: 300px;
+
+  position: relative;
+  overflow: hidden;
+}
+.tar::before{
+  content: '';
+  position: absolute;
+  top: -150%;
+  left: 50%;
+  width: 200%;
+  padding-bottom: 200%;
+  border-radius: 100%;
+  background: none;
+  -webkit-box-shadow: 0px -10px 5px 300px #F15723;
+  box-shadow: 0px -10px 5px 300px #F15723;
+  z-index: -1
+ 
+}
+#Formdiv{
+  color: white;
+  max-height: 80vh;
+  text-align: center;
+} 
+#choose{ width: 50%; min-height:35px ; color: white; background-color: #9cb7d0; margin-top: 15px; margin-bottom: 25px;}
+input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid whitesmoke;
+  background-color: transparent;
+  color: white;
+  min-width: 70px;
+ }
+ input::placeholder{
+   color: rgb(233, 232, 232);
+ }
+h4{ color: yellow;}
+#name{ width: 50px;  margin-left: 140px;}
+.fas1,.fas2,.fas3{ min-height: 40px; }
+
+.fas1 input,.fas2 input,.fas3 input{ min-width: 230px;}
+
+.button1 {
+  border-radius: 20px; background-color: white; width: 50%; height: 40px; color: blue;
+    outline: none; border: none;
+}
+#checkbox1,#checkbox2{ width: 25px;  height: 25px;}
+a{ font-size: 13px;}
+.social{
+  width:50%;
+}
+.facebook,.twitter,.instagram{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(12, 12, 167) ;
+  box-shadow: rgb(41, 41, 119) 3px 5px 15px ;
+}
+
+/* QUERIES */
+@media screen and (max-width: 580px) {
+  body{
+    background-color: #49A3F1;
+  }
+  .social{
+    width:80%;
+  }
+ h4{ color: red;}
+ #Formdiv{
+    margin: 0 auto;
+    width: 70vw;
+    color: white;
+  }
+  #choose{ width: 80%;}
+}
+@media screen and (max-width: 360px) {
+  .social{
+    width:95%;
+  }
+}
