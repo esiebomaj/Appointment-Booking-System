@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="signin.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./jQuery.js"></script>
     <title>Demo</title>
 
 </head>
 <body>
     <header class="wrapper">
-        <ul class="itemwrapper">
-      <li class="items logo abs"><img src="./Assets/Assets/Logo.png" alt="" width="120"></li>
-      <li class="items tems abs"><a class="abs1" href="index.html">Home</a></li>
-      <li class="items tems abs"><a class="abs1" href="#about">About Us</a></li>
-      <li class="items tems abs"><a class="abs1" href="#services">Services</a></li>
-      <li class="items tems b1 team" ><a  href="#team">Our Team</a></li>
-      <li class="items tems b1"><a  href="#contact">Contact Us</a></li>
-      <li class="items bmn"><button class="btns btn1"><a class="si" href="#signin">Sign In</a></button></li>
-      <li class="items bmn"><button class="btns btn2"><a class="su" href="#signup">Sign Up</a></button></li>
-      <li><button class="search"><i class="fa fa-search"></i></button></li>
+      <nav>
+      <ul class="itemwrapper">
+        <li class="items logo abs"><img src="./Assets/Assets/Logo.png" alt="" width="120"></li>
+      <li id="item2" class="items wrap jqs tems1 tems abs"><a class="abs1" href="index.html">Home</a></li>
+      <li id="item3" class="items wrap jqs tems1 tems abs"><a class="abs1" href="#about">About Us</a></li>
+      <li id="item4" class="items wrap jqs tems1 tems abs"><a class="abs1" href="#services">Services</a></li>
+      <li id="item5" class="items wrap jqs tems1 tems b1 team" ><a  href="#team">Our Team</a></li>
+      <li id="item6" class="items wrap jqs tems1 tems b1 contact"><a  href="#contact">Contact Us</a></li>
+      <li id="item7" class="items wrap bmn btnf1"><button class="btns btn1"><a class="si" href="signIn.html">Sign In</a></button></li>
+      <li id="item8" class="items wrap jqs bmn btnf2"><button class="btns btn2"><a class="su" href="#signup">Sign Up</a></button></li>
+      <li class="toggle"><i class="fa fa-bars"></i></li>
+      <li class="jqs"> <button class="search  btnf"><i class="fa fa-search"></i></button></li>
       </ul>
+      </nav>
       <div class="imgs">
         <div>
            <img class="img1" src="./Assets/Assets/Group 12.png" alt="" width="55%">
@@ -45,12 +49,19 @@
        <input type="text" class="u1" placeholder="devfreak@gmail.com">
        <p>Password</p>
        <input type="password" class="p1" placeholder="Enter password"> 
-       <p class="fg1"> <a href="#" >Forgot?</a></p>
+       <p class="fg1"> <a  href="#" >Forgot?</a></p>
        <input type="submit" value="Login" class="btn">
       </form>
       </div>
     </header>
-
     
+   <script>
+    $(document).ready(function(){
+       $('.toggle').click(function() {
+         $('.jqs').toggleClass("show")
+         $('ul li').toggleClass("hide")
+       })
+    })
+   </script>
 </body>
 </html>
