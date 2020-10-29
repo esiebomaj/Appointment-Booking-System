@@ -20,5 +20,5 @@ window.addEventListener('resize', () => {
 })
 window.addEventListener(('scroll'), () => {
     let top = navbar.getBoundingClientRect().top
-    console.log(navbar.getBoundingClientRect().top)
+
 })
