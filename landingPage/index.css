@@ -115,6 +115,13 @@ a {
     border-radius: 50%;
     background-color: #007bff;
     box-shadow: #007bff 3px 5px 15px;
+    cursor: pointer;
+}
+
+.facebook:hover,
+.twitter:hover,
+.instagram:hover {
+    opacity: 0.8;
 }
 
 
