@@ -15,6 +15,7 @@ main {
 .nav-link {
     font-weight: 600;
     font-size: large;
+    margin-left: 1rem;
 }
 
 #sign-inbtn,
@@ -364,5 +365,31 @@ footer .social i {
         justify-content: space-around;
         flex-wrap: wrap;
         gap: 10%;
+    }
+    .os {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+    }
+    .play {
+        left: 40%;
+    }
+    .intro-head {
+        color: #007bff !important;
+        text-align: center;
+        margin-top: 2.5rem;
+        font-size: 3.5rem;
+    }
+    .lead {
+        text-align: center;
+    }
+    .ba-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+    .navbar-brand img {
+        float: right;
     }
 }
