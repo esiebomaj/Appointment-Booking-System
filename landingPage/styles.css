@@ -16,14 +16,20 @@ main {
     font-weight: 600;
     font-size: large;
     margin-left: 1rem;
+    width: 100%;
 }
 
 #sign-inbtn,
 #sign-upbtn,
 .fa-search {
-    border-radius: 1.3rem;
+    border-radius: 1rem;
     position: relative;
     z-index: 10;
+    font-weight: 600;
+}
+
+nav form {
+    display: flex;
 }
 
 header {
@@ -392,4 +398,23 @@ footer .social i {
     .navbar-brand img {
         float: right;
     }
+    nav {
+        margin-top: -2rem;
+    }
+}
+
+@media(min-width:1000px) {
+    nav {
+        margin-top: -2rem;
+        background: transparent;
+    }
+}
+
+.change {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to right, #007bff, white);
+    z-index: 9999;
+    overflow: hidden;
 }

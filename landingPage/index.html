@@ -13,34 +13,34 @@
 <body>
     <!------------------------------Navbar-------------------------------->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img class="m-auto w-75" src="./Assets/Assets/Logo.png" alt=""></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light pt-lg-1">
+            <a class="navbar-brand pt-4" href="#"><img class="w-75 m-auto" src="./Assets/Assets/Logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+                    <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto">
+                <ul class="navbar-nav ml-lg-5 mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link mx-4 text-light" href="#home">Home</a>
+                        <a class="nav-link mx-3 text-light" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-4 text-light" href="#about">About Us</a>
+                        <a class="nav-link mx-3 text-light" href="#about">About Us</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link mx-4 text-light" href="#service">Service</a>
+                        <a class="nav-link mx-3 text-sm-primary text-light" href="#service">Service</a>
                     </li>
                     <li>
-                        <a href="#team" class="nav-link mx-4 text-primary">Our Team</a>
+                        <a href="#team" class="nav-link mx-3 text-primary">OurTeam</a>
                     </li>
-                    <li><a href="#contact" class="nav-link mx-4 text-primary">Contact Us</a></li>
+                    <li><a href="#contact" class="nav-link mx-3 text-primary">Contact Us</a></li>
                 </ul>
-                <form class="form-lg-inline my-2">
-                   <button class="btn btn-lg bg-light text-primary mx-lg-4" id="sign-inbtn"><a href="signIn.html"> Sign In</a></button>
-                    <button class="btn btn-lg bg-primary text-light mx-lg-4" id="sign-upbtn">Sign Up</button>
-                    <button class="btn  my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
-                </form>
+
+                <button class="btn btn-light text-primary mx-lg-4" id="sign-inbtn"><a class="text-decoration-none" href="signIn.html">Sign In</a></button>
+                <button class="btn btn-primary text-light mx-lg-4" id="sign-upbtn">Sign Up</button>
+                <button class="btn  my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+
             </div>
         </nav>
 
@@ -83,11 +83,13 @@
                     <h1 class="large"></h1>
                     <br><br>
 
-                    <h1 class="about-title mt-2 p-3">All About Pharmacure</h1>
+                    <h1 class="about-title mt-2 p-3 text-sm-center">All About Pharmacure</h1>
                     <p class="lead text-secondary font-weight-normal">
                         Our main long term goal is achieving complex results for your health.But in the process,we also keep focus on giving you the best customer service. We're always making our service easy and convenient to use.
                     </p>
-                    <a href="#" class="btn btn-primary">Read more...</a>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary">Read more...</a>
+                    </div>
                 </div>
                 <div class="col-md-6 m-auto">
                     <img src="./Assets/Assets/about.jpg" alt="doctors" class="w-100">
@@ -275,6 +277,7 @@
 
     <script src="./jQuery.js"></script>
     <script src="./bootstrap.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
