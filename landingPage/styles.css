@@ -410,11 +410,24 @@ footer .social i {
     }
 }
 
-.change {
+.up {
+    font-size: 3rem;
     position: fixed;
-    top: 0;
-    width: 100%;
-    background: linear-gradient(to right, #007bff, white);
+    right: 2rem;
+    cursor: pointer;
+    bottom: 10%;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
     z-index: 9999;
-    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.show {
+    opacity: 1;
+    pointer-events: all;
 }
