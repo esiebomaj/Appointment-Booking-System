@@ -1,0 +1,119 @@
+body{
+    background-image: url("./assets/Group\ 12.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:100vh;
+    
+}
+nav{
+    padding-top: 0;
+}
+h4{
+   color: #007bff!important;
+   text-align: center;
+}
+#sign-inbtn,#sign-upbtn{
+    border-radius: 20px;
+}#Formdiv{
+    height: 75vh;
+    
+}
+input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    color: black;
+    font-weight: 400;
+    width: 90%;
+}
+:-ms-input-placeholder{
+    color: black
+}
+ #username{
+    font-weight: bold;
+    color: grey;
+    font-size: 15px;
+}
+.fas1{
+    width: 90%;
+    left: 20px;
+}
+.forgot{
+    position: absolute;
+    right: 1%;
+    margin-bottom: 10px;
+}
+.button1{
+    width: 70%;
+    border-radius: 15px;
+    outline: none;
+    height: 40px;
+}
+.button2{
+    width: 90%;
+    border-radius: 25px;
+    outline: none;
+    height: 50px;
+    color: white;
+    border: none;  
+    box-shadow: #007bff 5px 5px 15px 2px; 
+}
+.button2:hover{
+    background-color: #0c68ca!important;
+}
+.corner1{
+    position: absolute;
+    width: 10%;
+    height:10%;
+    background-image: url("./assets/3.png");
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.corner{
+    position: fixed;
+    width: 6%;
+    height:8%;
+    background-image: url("./assets/3.png");
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+@media screen and (min-width:360px)  {
+  #Formdiv{
+      margin-top: 40vh;
+  }
+  .forgot{
+    position: absolute;
+    right: 5%;
+    margin-bottom: 10px;
+}
+}
+@media screen and (min-width: 300px) and (max-width:380px){
+    #Formdiv{
+        margin-top: 33vh;
+    }
+}
+@media screen and (min-width: 540px ) and ( max-width:700px) {
+    #Formdiv{
+        margin-top: 62vh;
+        width: 70vw;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+    .button2{
+        width: 70%;
+    }
+}
+@media screen and (min-width: 700px ){
+
+}
+@media screen and (max-width: 290px) {
+    #Formdiv{
+        margin-top: 21vh;
+        width: 90%;
+    }
+    }
